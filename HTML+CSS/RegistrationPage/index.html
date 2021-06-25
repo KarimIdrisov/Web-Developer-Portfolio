@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration Page</title>
+</head>
+
+<body>
+    <div class="form flex-column">
+        <form id="registration" >
+
+            <div class="userdata flex-column roboto">
+                <label for="username">Username</label>
+                <input id="username" type="text" required class="input">
+
+                <label for="firstname">Firstname</label>
+                <input id="firstname" type="text" required class="input">
+
+                <label for="lastname">Lastname</label>
+                <input id="lastname" type="text" required class="input">
+
+                <label for="age">Age</label>
+                <input type="number" min="0" max="99" required class="input">
+
+                <label for="sex">Sex</label>
+                <div class="sex flex-column">
+                    <div class="radio">
+                        <input type="radio" id="male" name="sex">
+                        <label for="male">Male</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" id="female" name="sex">
+                        <label for="female">Female</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" id="other" name="sex">
+                        <label for="other">Other</label>
+                    </div>
+                </div>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" class="input" required>
+            </div>
+            <button type="submit" class="submit">Register</button>
+        </form>
+    </div>
+</body>
+
+</html>
