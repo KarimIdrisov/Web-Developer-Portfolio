@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+
+    <h1 id="title" class="text-center text-white poppins">freeCodeCamp Survey Form</h1>
+    <h3 id="description" class="text-center text-white poppins italic">Thank you for taking the time to help us improve
+        the platform</h3>
+
+    <form id="survey-form" class="form">
+
+        <div class="user-date">
+            <label for="name" id="name-label" class="poppins text-white inputs">
+                Name
+            </label>
+            <input id="name" required placeholder="Input your name" class="input" type="text">
+
+            <label for="email" id="email-label" class="poppins text-white inputs">
+                Email
+            </label>
+            <input id="email" required placeholder="Enter your email" class="input" type="email">
+
+            <label for="number" id="number-label" for="" class="poppins text-white inputs">
+                Age(optional)
+            </label>
+            <input id="number" max="100" min="10" class="input" placeholder="Age" type="number">
+        </div>
+
+        <div class="role">
+            <label for="dropdown" class="poppins text-white inputs">
+                Which option best describes your current role?
+            </label>
+            <select id="dropdown" class="input">
+                <option selected disabled>Select current role</option>
+                <option>Student</option>
+                <option>Full Time Job</option>
+                <option>Full Time Learner</option>
+                <option>Prefer not to say</option>
+                <option>Other</option>
+            </select>
+        </div>
+
+        <div class="recomendations">
+            <label for="" class="poppins text-white inputs">
+                Would you recommend freeCodeCamp to a friend?
+            </label>
+            <p class="poppins text-white radio-text"><input id="definitely" type="radio" name="opinion"
+                    value="definitely" checked>Definitely
+            </p>
+            <p class="poppins text-white radio-text"><input id="maybe" type="radio" name="opinion" value="maybe">Maybe
+            </p>
+            <p class="poppins text-white radio-text"><input id="notsure" type="radio" name="opinion" value="notsure">Not
+                sure</p>
+        </div>
+
+        <div class="favorite">
+            <label for="favorites" class="poppins text-white inputs">
+                What is your favorite feature of freeCodeCamp?
+            </label>
+            <select id="favorites" class="input">
+                <option selected disabled>Select an option</option>
+                <option>Challenges</option>
+                <option>Projects</option>
+                <option>Community</option>
+                <option>Open Source</option>
+            </select>
+        </div>
+
+        <div class="skills">
+            <label for="" class="poppins text-white inputs">
+                What would you like to see improved? (Check all that apply)
+            </label>
+            <p class="poppins text-white radio-text"><input type="checkbox" name="opinion" value="frontend">Front-end
+                Projects</p>
+            <p class="poppins text-white radio-text"><input type="checkbox" name="opinion" value="backend">Back-end
+                Projects
+            </p>
+            <p class="poppins text-white radio-text"><input type="checkbox" name="opinion" value="dv">Data
+                Visualization
+            </p>
+            <p class="poppins text-white radio-text"><input type="checkbox" name="opinion" value="challenges">Challenges
+            </p>
+            <p class="poppins text-white radio-text"><input type="checkbox" name="opinion" value="opensource">Open
+                Source
+                Community
+            </p>
+            <p class="poppins text-white radio-text"><input type="checkbox" name="opinion" value="helprooms">Gitter help
+                rooms
+            </p>
+            <p class="poppins text-white radio-text"><input type="checkbox" name="opinion" value="videos">Videos
+            </p>
+            <p class="poppins text-white radio-text"><input type="checkbox" name="opinion" value="meetups">City Meetups
+            </p>
+            <p class="poppins text-white radio-text"><input type="checkbox" name="opinion" value="wiki">Wiki</p>
+            <p class="poppins text-white radio-text"><input type="checkbox" name="opinion" value="forum">Forum
+            </p>
+            <p class="poppins text-white radio-text"><input id="maybe" type="checkbox" name="opinion"
+                    value="courses">Additional Courses
+            </p>
+        </div>
+
+        <div class="comments">
+            <label for="" class="poppins text-white inputs">
+                Any comments or suggestions?
+            </label>
+            <textarea name="" id="" class="textarea" cols="30" rows="10"
+                placeholder="Enter your comment here..."></textarea>
+        </div>
+
+
+        <button id="submit" type="submit" class="text-white submit poppins">Sumbit</button>
+    </form>
+
+</body>
+
+</html>

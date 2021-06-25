@@ -1,0 +1,190 @@
+/* font imports  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+/* think about code below */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #eee;
+}
+
+.header {
+    display: flex;
+    height: 75px;
+    align-items: center;
+    margin-left: 1%;
+    position: fixed;
+    background-color: #eee;
+    width: 96%;
+    left: 0;
+    right: 0;
+}
+
+.header img {
+    width: 300px;
+    height: 45px;
+    z-index: 9999;
+}
+
+.spacer {
+    flex-grow: 1;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.poppins {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main {
+    padding-top: 75px;
+    margin: auto;
+    width: 65%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    font-size: 2rem;
+    display: block;
+    margin: 10px;
+    
+}
+
+ul li {
+    margin-left: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.submit {
+    width: 10rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+    height: 2rem;
+    outline: 0;
+    border-color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+}
+
+.email {
+    width: 15rem;
+    margin: 0.5rem;
+    border-radius: 3px;
+    height: 1.5rem;
+    outline: 0;
+    border-color: lightgray;
+    padding-left: 3px;
+}
+
+.email:focus {
+    border-color: lightgray;
+    box-shadow:0 0 0 0.1rem rgba(64, 66, 65, 0.3);
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.properties {
+    display: flex;
+    flex-direction: row;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 80%;
+}
+
+i {
+    width: 4rem;
+    margin: 2rem;
+    color: orange;
+}
+
+.video {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.products {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    width: calc(100% / 3 - 4%);
+    height: 15rem;
+    justify-content: space-between;
+    border-radius: 3px;
+}   
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightgray;
+    padding: 1.5rem;
+    justify-content: space-around;
+}
+
+.footer p {
+    color: black;
+}
+
+.select {
+    width: 60%;
+    border-radius: 5px;
+    height: 2rem;
+    outline: 0;
+    background-color: rgba(255, 166, 0, 0.603);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.product-name {
+    background-color: lightgray;
+    width: 100%;
+}
