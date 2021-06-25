@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+</head>
+<body>
+
+    <main>
+
+        <form method="POST">
+
+            <div>
+
+                <h1>Employee Interests Survey Form</h1>
+
+                <p>
+                    <label for="name">Enter your name:</label><br>
+                    <input type="text" name="name" id="name">
+                </p>
+
+                <p>
+                    <label for="department">Enter your department:</label><br>
+                    <input type="text" name="department" id="department">
+                </p>
+
+                <p>
+                    <label for="info">Tell us about yourself:</label>
+                    <textarea name="info" id="info"></textarea>
+                </p>
+
+                <p>
+                Do you exercise at home?<br>
+                    <label for="yes">Yes</label>
+                    <input type="radio" name="exercise" id="yes" value="yes">
+                    <label for="No">No</label>
+                    <input type="radio" name="exercise" id="no" value="no">
+                </p>
+
+                <p>
+                    How do you like to read about your favorite topics?<br>
+
+                    <label for="books">Books</label>
+                    <input type="checkbox" name="books" id="books">
+                    <label for="online">Online resources</label>
+                    <input type="checkbox" name="books" id="online">
+                    <label for="phone">Phone apps</label>
+                    <input type="checkbox" name="books" id="phone">
+                    <label for="magazines">Magazines</label>
+                    <input type="checkbox" name="books" id="magazines">
+                </p>
+
+                <p>
+                    <label for="genre">What genre of movies do you like?</label>
+                    <select name="genre" id="genre">
+                        <option selected value="comedy">Comedy</option>
+                        <option value="romance">Romance</option>
+                        <option value="thriller">Thriller</option>
+                        <option value="horror">Horror</option>
+                        <option value="biopic">Biopic</option>
+                    </select>
+                </p>
+
+                <p>
+                    <input type="reset" value="Reset form">
+                    <input type="submit" value="Submit">
+                </p>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
