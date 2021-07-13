@@ -1,0 +1,292 @@
+@import "nullstyle.scss";
+
+body {
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+   max-width: 100%;
+}
+
+.container {
+   max-width: 944px;
+   margin: 0 auto;
+}
+
+.header {
+   padding: 33px 15px 0 15px;
+   margin: 0 15px;
+
+   &__row {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 33px;
+      border-bottom: 1px solid #828282;
+   }
+   &__menu {
+   }
+
+   &__item a {
+      font-size: 18px;
+      line-height: 22px;
+      color: #828282;
+   }
+
+   @media (max-width: 500px) {
+      display: none;
+   }
+}
+
+.header-info {
+   color: #070707;
+   padding: 0 15px 105px 15px;
+   margin: 0 15px;
+
+   &__body {
+      padding: 40px 0 30px 0;
+   }
+
+   &__row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @media (max-width: 500px) {
+         display: flex;
+         flex-direction: column;
+         align-items: flex-start;
+      }
+   }
+
+   &__tittle {
+      font-size: 47.3px;
+      line-height: 59px;
+      font-weight: bold;
+   }
+
+   &__subtitle {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+   }
+
+   &__lang {
+      font-weight: bold;
+      transform: rotate(-90deg);
+      font-size: 16px;
+      line-height: 20px;
+      text-transform: uppercase;
+      @media (max-width: 500px) {
+         display: none;
+      }
+   }
+
+   &__image {
+      display: flex;
+      justify-content: center;
+   }
+
+   &__image img {
+      object-position: center;
+   }
+}
+
+.about {
+   padding: 120px 15px 107px 15px;
+   background: #f6f6f6;
+   margin: 0 15px;
+
+   &__wrapper {
+      max-width: 485px;
+      margin: 0 auto;
+   }
+
+   &__title {
+      text-align: center;
+      padding-bottom: 15px;
+   }
+
+   &__body {
+      font-size: 18px;
+      line-height: 22px;
+      font-weight: 500;
+      text-align: center;
+   }
+   &__body p {
+      margin-bottom: 45px;
+   }
+
+   &__body p:last-child {
+      margin-bottom: 0;
+   }
+}
+
+.skills {
+   padding: 91px 15px 110px 15px;
+   margin: 0 15px;
+
+   &__title {
+      text-align: center;
+      margin-bottom: 69px;
+   }
+
+   &__body {
+      text-align: center;
+      font-size: 18px;
+      line-height: 22px;
+      font-weight: 500;
+      margin-bottom: 83px;
+   }
+
+   &__icons {
+   }
+}
+
+.item-icons {
+   &__row {
+      display: flex;
+      justify-content: space-between;
+      @media (max-width: 600px) {
+         flex-direction: column;
+      }
+   }
+
+   &__skill {
+      display: flex;
+      flex-direction: column;
+      height: 207px;
+      justify-content: space-between;
+      align-items: center;
+      @media (max-width: 600px) {
+         margin-bottom: 40px;
+      }
+   }
+
+   &__skill:last-child {
+      margin-bottom: 0;
+   }
+
+   &__icon {
+   }
+
+   &__name {
+      font-size: 14px;
+      line-height: 17px;
+      font-weight: bold;
+   }
+
+   &__name p {
+      color: #828282;
+      text-align: center;
+   }
+
+   &__stars {
+   }
+}
+
+.portfolio {
+   margin: 0 15px;
+   padding: 113px 15px 96px 15px;
+   background-color: #f6f6f6;
+
+   &__title {
+      text-align: center;
+      margin-bottom: 47px;
+   }
+
+   &__example {
+      margin-bottom: 99px;
+   }
+
+   &__example:last-child {
+      margin-bottom: 0;
+   }
+
+   &__image {
+      margin-bottom: 45px;
+   }
+
+   &__link {
+      text-align: center;
+      font-weight: 500;
+   }
+
+   &__link a {
+      font-size: 18px;
+      line-height: 22px;
+      text-decoration: underline;
+      color: #070707;
+   }
+}
+
+.title {
+   font-weight: bold;
+   font-size: 34px;
+   line-height: 42px;
+   color: #070707;
+}
+
+.contacts {
+   margin: 0 15px;
+   padding: 114px 15px 123px 15px;
+
+   &__wrapper {
+      max-width: 342px;
+      margin: 0 auto;
+   }
+
+   &__title {
+      text-align: center;
+      margin-bottom: 20px;
+   }
+   &__body {
+      font-size: 18px;
+      line-height: 22px;
+      text-align: center;
+      margin-bottom: 30px;
+      color: #070707;
+      font-weight: 500;
+   }
+   &__button {
+      text-align: center;
+      margin-bottom: 86px;
+   }
+
+   &__button button {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 22px;
+      color: #ffffff;
+      background-color: #000;
+      height: 42px;
+      width: 180px;
+      border-radius: 30px;
+   }
+
+   &__links {
+   }
+
+   &__row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 45px;
+   }
+
+   &__link {
+   }
+
+   &__info {
+      text-align: center;
+      font-size: 14px;
+      line-height: 17px;
+      font-weight: 500;
+      color: #828282;
+   }
+}
+
+.active a {
+   color: #000;
+}
+
+.notactive {
+   color: #828282;
+}
