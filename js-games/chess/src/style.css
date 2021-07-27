@@ -1,3 +1,7 @@
+* {
+   box-sizing: border-box;
+}
+
 .container {
    width: 1140px;
    margin: 0 auto;
@@ -33,4 +37,8 @@ body {
 
 .white {
    background-color: #fff;
+}
+
+.active {
+   border: 3px solid #f00;
 }
