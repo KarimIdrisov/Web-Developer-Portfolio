@@ -397,36 +397,6 @@ html {
    overflow: hidden;
 }
 
-.comfort > .container::before {
-   content: "";
-   position: absolute;
-   left: 50%;
-   bottom: -25%;
-   z-index: 2;
-   overflow: hidden;
-
-   width: 180px;
-   height: 290px;
-
-   background: url("img/mobile1.png") no-repeat;
-   border-radius: 20px;
-}
-
-.comfort > .container::after {
-   content: "";
-   position: absolute;
-   right: 0;
-   bottom: 0;
-   z-index: 1;
-   overflow: hidden;
-
-   width: 287px;
-   height: 417px;
-
-   background: url("img/mobile2.png") no-repeat;
-   border-radius: 20px;
-}
-
 .comfort__wrapper {
    max-width: 565px;
 }
@@ -554,4 +524,65 @@ html {
 
 .orange {
    background: #95936a;
+}
+
+/* Add secion styles */
+
+.add {
+}
+
+.add__title {
+   margin-bottom: 22px;
+}
+
+.add__subtitle {
+   margin-bottom: 22px;
+}
+
+.add__row {
+   display: flex;
+}
+
+.add__row a:not(:last-child) {
+   margin-right: 38px;
+}
+
+/* Footer styles */
+
+.footer {
+   font-family: Spartan;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 12px;
+   line-height: 128.8%;
+}
+
+.footer a {
+   color: #2d3746;
+}
+
+.footer__row {
+   display: flex;
+   justify-content: space-between;
+}
+
+.footer__copyright {
+   padding: 0 0 0 30px;
+   position: relative;
+}
+
+.footer__copyright p {
+   color: #2d3746;
+}
+
+.footer__copyright::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+
+   width: 22px;
+   height: 34px;
+
+   background: url("img/icons/logo.svg") 0 0 / cover no-repeat;
 }
