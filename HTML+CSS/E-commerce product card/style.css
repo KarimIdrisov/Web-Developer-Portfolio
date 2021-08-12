@@ -1,8 +1,17 @@
+@font-face {
+    font-family: "Verdana";
+    src: url("verdana.eot");
+    src: local("☺"), url("verdana.woff") format("woff"), url("verdana.ttf") format("truetype"),
+        url("verdana.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     margin: 0;
     padding: 0;
     background: #81f7f3;
-    font-family: sans-serif;
+    font-family: Verdana;
 }
 
 .product {
@@ -13,7 +22,7 @@ body {
     width: 300px;
     height: 400px;
     background: #0e0e0f;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, .2);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     overflow: hidden;
 }
@@ -121,7 +130,7 @@ body {
     text-align: center;
     text-decoration: none;
     border-radius: 5px;
-    transition: .02ms;
+    transition: 0.02ms;
     cursor: pointer;
 }
 
