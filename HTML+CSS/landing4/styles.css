@@ -1,0 +1,617 @@
+* {
+   padding: 0;
+   margin: 0;
+   border: 0;
+}
+
+*,
+*:before,
+*:after {
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+:focus,
+:active {
+   outline: none;
+}
+
+a:focus,
+a:active {
+   outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+   display: block;
+}
+
+html,
+body {
+   height: 100%;
+   width: 100%;
+   font-size: 100%;
+   line-height: 1;
+   font-size: 14px;
+   -ms-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+   font-family: inherit;
+}
+
+input::-ms-clear {
+   display: none;
+}
+
+button {
+   cursor: pointer;
+}
+
+button::-moz-focus-inner {
+   padding: 0;
+   border: 0;
+}
+
+a,
+a:visited {
+   text-decoration: none;
+}
+
+a:hover {
+   text-decoration: none;
+}
+
+ul li {
+   list-style: none;
+}
+
+img {
+   vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-size: inherit;
+   font-weight: inherit;
+}
+
+/* Fonts */
+
+@font-face {
+   font-family: "Gilroy";
+   src: url("fonts/Gilroy-Regular.eot");
+   src: local("Gilroy Regular"), local("Gilroy-Regular"),
+      url("fonts/Gilroy-Regular.eot?#iefix") format("embedded-opentype"),
+      url("fonts/Gilroy-Regular.woff2") format("woff2"), url("fonts/Gilroy-Regular.woff") format("woff"),
+      url("fonts/Gilroy-Regular.ttf") format("truetype");
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: "Gilroy";
+   src: url("fonts/Gilroy-Bold.eot");
+   src: local("Gilroy Bold"), local("Gilroy-Bold"), url("fonts/Gilroy-Bold.eot?#iefix") format("embedded-opentype"),
+      url("fonts/Gilroy-Bold.woff2") format("woff2"), url("fonts/Gilroy-Bold.woff") format("woff"),
+      url("fonts/Gilroy-Bold.ttf") format("truetype");
+   font-weight: bold;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: "Gilroy";
+   src: url("fonts/Gilroy-Light.eot");
+   src: local("Gilroy Light"), local("Gilroy-Light"), url("fonts/Gilroy-Light.eot?#iefix") format("embedded-opentype"),
+      url("fonts/Gilroy-Light.woff2") format("woff2"), url("fonts/Gilroy-Light.woff") format("woff"),
+      url("fonts/Gilroy-Light.ttf") format("truetype");
+   font-weight: 300;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: "Gilroy";
+   src: url("fonts/Gilroy-Semibold.eot");
+   src: local("Gilroy Semibold"), local("Gilroy-Semibold"),
+      url("fonts/Gilroy-Semibold.eot?#iefix") format("embedded-opentype"),
+      url("fonts/Gilroy-Semibold.woff2") format("woff2"), url("fonts/Gilroy-Semibold.woff") format("woff"),
+      url("fonts/Gilroy-Semibold.ttf") format("truetype");
+   font-weight: 600;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: "Gilroy";
+   src: url("fonts/Gilroy-Medium.eot");
+   src: local("Gilroy Medium"), local("Gilroy-Medium"),
+      url("fonts/Gilroy-Medium.eot?#iefix") format("embedded-opentype"),
+      url("fonts/Gilroy-Medium.woff2") format("woff2"), url("fonts/Gilroy-Medium.woff") format("woff"),
+      url("fonts/Gilroy-Medium.ttf") format("truetype");
+   font-weight: 500;
+   font-style: normal;
+}
+
+/* --------------- */
+
+img {
+   max-width: 100%;
+}
+
+.orange-text {
+   color: #ef8711;
+}
+
+.container {
+   max-width: 1140px;
+   margin: 0 auto;
+}
+
+.section {
+   padding-left: 15px;
+   padding-right: 15px;
+}
+
+.section-title {
+   text-align: center;
+
+   font-family: Gilroy;
+   font-style: normal;
+   font-weight: 600;
+   font-size: 38px;
+   line-height: 47px;
+   color: #0297f1;
+}
+
+.main {
+   background: linear-gradient(180deg, #ddecff 0%, #f7faff 51.04%, #ddecff 100%);
+}
+
+/* Header styles */
+
+.header {
+   padding: 30px 0;
+
+   font-family: Gilroy;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 18px;
+   line-height: 22px;
+
+   background: #ddecff;
+}
+
+.header__row {
+   margin-bottom: 35px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.header__menu {
+}
+
+.menu__list {
+   display: flex;
+
+   justify-content: space-between;
+}
+
+.menu__list a {
+   padding-bottom: 5px;
+
+   color: #85888f;
+}
+
+a.active-link {
+   position: relative;
+
+   color: #0297f1;
+}
+
+.active-link::after {
+   content: "";
+
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   height: 2px;
+   width: 100%;
+
+   border-radius: 5px;
+   background-color: #0297f1;
+}
+
+/* Welcome section styles */
+
+.welcome {
+   position: relative;
+
+   padding-top: 30px;
+   padding-bottom: 155px;
+
+   background: linear-gradient(
+         90deg,
+         rgba(255, 255, 255, 0.44) -3.25%,
+         rgba(247, 248, 252, 0.716923) -3.23%,
+         rgba(245, 246, 252, 0.719037) -3.22%,
+         rgba(130, 187, 255, 0.47) -3.21%,
+         rgba(83, 103, 174, 0.67) 37.08%,
+         rgba(0, 5, 20, 0.86) 100%
+      ),
+      url("img/icons/welcome-bg.png");
+}
+
+.welcome .container {
+   position: relative;
+}
+
+.welcome .container::after {
+   content: "";
+   position: absolute;
+   right: 0;
+   top: 65px;
+   z-index: 2;
+
+   width: 380px;
+   height: 480px;
+
+   background: url("img/welcom.png") no-repeat;
+}
+
+.welcome .container::before {
+   content: "";
+   position: absolute;
+   right: 0;
+   top: 85px;
+
+   transform: translate(25px, 50px);
+
+   width: 320px;
+   height: 440px;
+
+   background: #0297f1;
+   border-radius: 15px;
+}
+
+.breadcrumbs {
+   margin-bottom: 103px;
+}
+
+.breadcrumbs__item {
+   position: relative;
+
+   padding: 0 20px 0 0;
+   display: inline-block;
+}
+
+.breadcrumbs__link {
+   font-family: Gilroy;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 18px;
+   line-height: 22px;
+   color: #fff;
+}
+
+.breadcrumbs__item::after {
+   content: "";
+   position: absolute;
+   right: 0;
+   top: 35%;
+
+   width: 8px;
+   height: 1px;
+   transform: rotate(45deg);
+
+   background-color: #50bdff;
+}
+
+.breadcrumbs__item::before {
+   content: "";
+   position: absolute;
+   right: 0;
+   bottom: 35%;
+
+   width: 8px;
+   height: 1px;
+   transform: rotate(-45deg);
+
+   background-color: #50bdff;
+}
+
+.welcome__info {
+   max-width: 620px;
+}
+
+.welcome__title {
+   margin-bottom: 5px;
+
+   font-family: Gilroy;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 48px;
+   line-height: 59px;
+
+   color: #fff;
+}
+
+.welcome__subtitle {
+   margin-bottom: 30px;
+
+   font-family: Gilroy;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 24px;
+   line-height: 29px;
+
+   color: #e1e1e1;
+}
+
+.welcome__buy {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 255px;
+   height: 55px;
+
+   font-family: Gilroy;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 20px;
+   line-height: 24px;
+   color: #ffffff;
+
+   background: #0297f1;
+   border-radius: 10px;
+}
+
+/* Direction section styles */
+
+.directions {
+   padding-top: 50px;
+   padding-bottom: 35px;
+}
+
+.directions__title {
+   margin-bottom: 38px;
+}
+.directions__row {
+   display: flex;
+   justify-content: space-between;
+   align-items: stretch;
+}
+.directions__item {
+   display: flex;
+   flex-direction: column;
+   max-width: 350px;
+
+   background: #ffffff;
+   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.14);
+   border-radius: 10px;
+}
+
+.directions__item:not(:last-child) {
+   margin-right: 30px;
+}
+
+.directions__item img {
+   margin-bottom: 23px;
+}
+
+.directions-item__title {
+   margin-bottom: 28px;
+
+   font-family: Gilroy;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 22px;
+   line-height: 27px;
+   text-align: center;
+
+   color: #0297f1;
+}
+
+/* Gaz section styles */
+
+.gaz {
+   padding-top: 38px;
+   padding-bottom: 76px;
+
+   background: url("img/icons/circle.svg");
+}
+
+.gaz__title {
+   margin-bottom: 28px;
+}
+
+.gaz__row {
+   display: flex;
+   justify-content: space-between;
+}
+
+.gaz__benefits {
+   display: flex;
+   align-items: start;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.gaz__benefits p {
+   font-family: Gilroy;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 20px;
+   line-height: 24px;
+   /* identical to box height */
+
+   color: #13284f;
+}
+
+.gaz-benefits__title {
+   font-family: Gilroy;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 24px;
+   line-height: 29px;
+   text-align: center;
+
+   color: #00a5f7;
+}
+
+/* Price section styles */
+
+.price {
+   padding-top: 40px;
+   padding-bottom: 90px;
+}
+
+.price__title {
+   margin-bottom: 50px;
+}
+
+.price__row {
+   display: flex;
+   justify-content: space-between;
+   align-items: stretch;
+}
+
+.price-row__item {
+   max-width: 350px;
+   padding: 25px 0 28px 0;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+   background: #ddecff;
+   box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.13);
+   border-radius: 35px;
+}
+
+.price-row__item.dark-bg {
+   background: #13284f;
+}
+
+.price-row__item img {
+   margin-bottom: 20px;
+
+   border-radius: 20px;
+}
+
+.price-row__item:not(:last-child) {
+   margin-right: 30px;
+}
+
+.price-item__title {
+   margin-bottom: 7px;
+
+   font-family: Gilroy;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 22px;
+   line-height: 27px;
+   text-align: center;
+
+   color: #0297f1;
+}
+
+.dark-bg .price-item__title {
+   color: #ffffff;
+}
+
+.price-item__value {
+   margin-bottom: 15px;
+
+   font-family: Gilroy;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 24px;
+   line-height: 29px;
+   text-align: center;
+
+   color: #ef8711;
+}
+
+.price-item__list {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+   font-family: Gilroy;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 18px;
+   line-height: 22px;
+   /* identical to box height */
+
+   text-align: center;
+
+   color: #0297f1;
+}
+
+.dark-bg .price-item__list {
+   color: #ffffff;
+}
+
+.price-item__list li {
+   display: inline-block;
+   position: relative;
+   padding-left: 20px;
+}
+
+.price-item__list li::before {
+   content: " ";
+   position: absolute;
+   top: 5px;
+   left: 0;
+
+   width: 12px;
+   height: 12px;
+
+   background: url("img/icons/galka.svg") 0 0 / contain no-repeat;
+}
+
+.price-item__list li:not(:last-child) {
+   margin-bottom: 20px;
+}
+
+.price-row__item li:last-child {
+   margin-bottom: 26px;
+}
+
+.price__service-order {
+   width: 255px;
+   height: 55px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   font-family: Gilroy;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 18px;
+   line-height: 22px;
+   text-align: center;
+   color: #0297f1;
+
+   border: 1px solid #0297f1;
+   box-sizing: border-box;
+   border-radius: 10px;
+}
+
+.dark-bg .price__service-order {
+   background: #ef8711;
+
+   color: #ffffff;
+}
