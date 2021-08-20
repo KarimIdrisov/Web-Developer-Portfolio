@@ -1,0 +1,211 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+body {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+  background: url("/img/b1.jpg") 0 0/cover no-repeat;
+}
+
+.header {
+  max-width: 1600px;
+  margin: 0 15px;
+  padding: 40px 15px 190px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__logo {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 40px;
+          flex: 0 0 40px;
+  max-width: 100%;
+}
+
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__link a {
+  margin-left: 20px;
+  font-size: 16px;
+  line-height: 150%;
+  color: #fff;
+}
+
+.header__login button {
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
+  border-radius: 50px;
+  width: 183px;
+  height: 44px;
+  color: #fff;
+}
+
+.info {
+  padding-bottom: 218px;
+}
+
+.info__title {
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 140%;
+}
+
+.info__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.info__time {
+  background-color: #121212;
+  width: 102px;
+  height: 112px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 30px;
+}
+
+.info__time p:first-child {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 140%;
+}
+
+.info__time:last-child {
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.container {
+  max-width: 1315px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.course-order {
+  background-color: #121212;
+  height: 130px;
+}
+
+.course-order__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.course-order__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+  -ms-grid-columns: 1fr;
+      grid-template: 1fr / 1fr;
+}

@@ -1,0 +1,140 @@
+@import "_nullstyle.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body {
+   font-family: "Roboto", sans-serif;
+   color: #fff;
+}
+
+.wrapper {
+   height: 100%;
+   width: 100%;
+   background: url("/img/b1.jpg") 0 0 / cover no-repeat;
+}
+
+.header {
+   max-width: 1600px;
+   margin: 0 15px;
+   padding: 40px 15px 190px 15px;
+   display: flex;
+   margin: 0 auto;
+   justify-content: space-between;
+   align-items: center;
+
+   &__logo {
+      flex: 0 0 40px;
+      max-width: 100%;
+   }
+
+   &__menu {
+   }
+
+   &__list {
+      display: flex;
+   }
+
+   &__link a {
+      margin-left: 20px;
+      font-size: 16px;
+      line-height: 150%;
+      color: #fff;
+   }
+
+   &__login {
+   }
+
+   &__login button {
+      font-size: 16px;
+      line-height: 150%;
+      text-align: center;
+      background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
+      border-radius: 50px;
+      width: 183px;
+      height: 44px;
+      color: #fff;
+   }
+}
+
+.info {
+   padding-bottom: 218px;
+
+   &__title {
+      font-weight: bold;
+      font-size: 64px;
+      line-height: 140%;
+   }
+
+   &__row {
+      display: flex;
+   }
+
+   &__time {
+      background-color: #121212;
+      width: 102px;
+      height: 112px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-right: 30px;
+   }
+
+   &__time p:first-child {
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 140%;
+   }
+
+   &__time:last-child {
+      font-size: 16px;
+      line-height: 140%;
+   }
+}
+.container {
+   max-width: 1315px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
+.course-order {
+   background-color: #121212;
+   height: 130px;
+
+   &__row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   &__button {
+   }
+
+   &__button button {
+   }
+
+   &__grid {
+      display: grid;
+      grid-template: 1fr / 1fr;
+   }
+
+   &__money {
+   }
+
+   &__count {
+   }
+
+   &__line {
+   }
+
+   &__subtitles {
+   }
+}
+
+.grid {
+   &__row1 {
+   }
+
+   &__row2 {
+   }
+}

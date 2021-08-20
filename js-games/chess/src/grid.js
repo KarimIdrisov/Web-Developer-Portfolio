@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
    }
 
-   const board = new Board();
-   board.drawBoard();
+
+   main();
 
 })
